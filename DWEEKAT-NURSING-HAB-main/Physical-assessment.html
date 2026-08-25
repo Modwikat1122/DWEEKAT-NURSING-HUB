@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Physical assessment  | DWEEKAT Nursing Hub</title>
+
+  <!-- نفس ملفات الصفحة الرئيسية -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+   <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dhcpucpyf/image/upload/w_32,h_32,c_fill/v1769023270/Blue_and_White_Illustrative_Doctor_Health_Care_Logo_arp39l.png">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container header-content">
+    <div class="logo">
+      <i class="fas fa-heartbeat"></i>
+      <span>DWEEKAT Nursing Hub</span>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#content" class="nav-link active">Physical assessment</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" style="padding:140px 0 80px;">
+  <div class="hero-content">
+    <h1 class="hero-title">Physical assessment</h1>
+    <p class="hero-description">
+      
+تهدف هذه المادة إلى تزويد الطالب بالمعرفة والمهارات الأساسية لإجراء التقييم البدني الشامل للفرد، من خلال جمع البيانات الصحية، أخذ التاريخ المرضي، وفحص أجهزة الجسم المختلفة. تركّز على التعرف على العلامات الطبيعية وغير الطبيعية، وربط نتائج التقييم بالحالة الصحية للمريض، بما يساهم في دعم التشخيص السريري ووضع خطط الرعاية والتدخل المناسبة
+    </p>
+
+ <!-- زر الامتحان -->
+    <a class="hero-quiz-btn" onclick="openQuiz()">NCLIX QUIZ</a>
+  </div>
+</section>
+
+<!-- NCLEX Quiz Overlay -->
+<div id="quizOverlay" class="quiz-overlay" style="display:none;">
+  <div class="quiz-modal" style="direction: rtl; text-align: right;">
+    <span class="quiz-close" onclick="closeQuiz()" style="cursor:pointer;">✕</span>
+    <h2>NCLIX QUIZ – Physical assessment</h2>
+    <div id="quizContent"></div>
+  </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<section class="topics" id="content">
+  <div class="container">
+    <div class="topics-grid single-card">
+
+      <!-- Part 1 Card -->
+      <div class="Physical assessment part 1-card" onclick="toggleContent('fluids1')">
+        <div class="topic-poster">
+          <img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1769111490/Blue_White_Illustrative_Profile_Work_Portfolio_Cover_hnc6rw.jpg"Fluids Part 1">
+          <div class="topic-badge">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+        </div>
+        <div class="topic-content">
+          <h3 class="topic-title">Physical assessment part 1</h3>
+          <p class="topic-description">شرح كامل للجزء الأول</p>
+        </div>
+      </div>
+
+      <!-- Part 2 Card -->
+      <div class="Physical assessment part 2-card" onclick="toggleContent('fluids2')">
+        <div class="topic-poster">
+          <img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1769111490/Blue_White_Illustrative_Profile_Work_Portfolio_Cover_hnc6rw.jpg"_blank" class="bls-download-btn" alt="Fluids Part 2">
+          <div class="topic-badge">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+        </div>
+        <div class="topic-content">
+          <h3 class="topic-title">Physical assessment part 2</h3>
+          <p class="topic-description">شرح كامل للجزء الثاني </p>
+        </div>
+      </div>
+
+ <!-- Part 3 Card -->
+      <div class="Physical assessment part 3-card" onclick="toggleContent('fluids3')">
+        <div class="topic-poster">
+          <img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1769111491/Blue_White_Illustrative_Profile_Work_Portfolio_Cover_hfff76.jpg"_blank" class="bls-download-btn" alt="Fluids Part 2">
+          <div class="topic-badge">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+        </div>
+        <div class="topic-content">
+          <h3 class="topic-title">Physical assessment part 3</h3>
+          <p class="topic-description"> شرح كامل للجزء الثالث </p>
+        </div>
+      </div>
+
+ <!-- Part 4 Card -->
+      <div class="Physical assessment part 4-card" onclick="toggleContent('fluids4')">
+        <div class="topic-poster">
+          <img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1769111491/Blue_White_Illustrative_Profile_Work_Portfolio_Cover_hfff76.jpg"_blank" class="bls-download-btn" alt="Fluids Part 2">
+          <div class="topic-badge">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+        </div>
+        <div class="topic-content">
+          <h3 class="topic-title">Physical assessment part 4</h3>
+          <p class="topic-description">شرح كامل للجزء الرابع </p>
+        </div>
+      </div>
+
+    </div> <!-- /.topics-grid -->
+
+    <!-- محتوى الفيديو والملفات Part 1 -->
+    <div id="fluids1" class="topic-details">
+      <div class="section-header">
+        <h2 class="section-title">الفيديو التعليمي</h2>
+        <p class="section-subtitle">Physical assessment – Part 1</p>
+      </div>
+      <div class="topic-video">
+        <iframe src="https://www.youtube.com/embed/KLuTLF3x9sA" allowfullscreen></iframe>
+      </div>
+      <div class="section-header">
+        <h2 class="section-title">المصادر التعليمية</h2>
+      </div>
+      <div class="bls-files">
+        <img src="https://nphwfavjieuzqlagjnsw.supabase.co/storage/v1/object/public/Hyperfit/F%20E.png"Resources Part 1">
+        <div class="bls-buttons">
+          <a href="https://drive.google.com/file/d/1BGNDHR9ODBEZ2CRzrdaUfLcsdPPaD2yY/view?usp=sharing" class="bls-download-btn">PDF</a>
+          <a href="https://drive.google.com/file/d/12tZmnS3Hu9hld6ig7JjwdQZE89GaUnj2/view?usp=sharing">POSTER</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- محتوى الفيديو والملفات Part 2 -->
+    <div id="fluids2" class="topic-details">
+      <div class="section-header">
+        <h2 class="section-title">الفيديو التعليمي</h2>
+        <p class="section-subtitle">Physical assessment – Part 2</p>
+      </div>
+      <div class="topic-video">
+        <iframe src="https://www.youtube.com/embed/KLuTLF3x9sA" allowfullscreen></iframe>
+      </div>
+      <div class="section-header">
+        <h2 class="section-title">المصادر التعليمية</h2>
+      </div>
+      <div class="bls-files">
+        <img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1769111490/F_E_uz9fxd.png" alt="Resources Part 2">
+        <div class="bls-buttons">
+          <a href="https://drive.google.com/file/d/1BGNDHR9ODBEZ2CRzrdaUfLcsdPPaD2yY/view?usp=sharing" target="_blank" class="bls-download-btn"bls-download-btn">PDF</a>
+          <a href="https://drive.google.com/file/d/12tZmnS3Hu9hld6ig7JjwdQZE89GaUnj2/view?usp=sharing" target="_blank" class="bls-download-btn">POSTER</a>
+        </div>
+      </div>
+    </div>
+
+<!-- محتوى الفيديو والملفات Part 3 -->
+    <div id="fluids3" class="topic-details">
+      <div class="section-header">
+        <h2 class="section-title">الفيديو التعليمي</h2>
+        <p class="section-subtitle">Physical assessment – Part 3</p>
+      </div>
+      <div class="topic-video">
+        <iframe src="https://www.youtube.com/embed/fjOeJssZX_Q" allowfullscreen></iframe>
+      </div>
+      <div class="section-header">
+        <h2 class="section-title">المصادر التعليمية</h2>
+      </div>
+      <div class="bls-files">
+        <img src="https://nphwfavjieuzqlagjnsw.supabase.co/storage/v1/object/public/Hyperfit/F%20E.png" alt="Resources Part 2">
+        <div class="bls-buttons">
+          <a href="https://drive.google.com/file/d/1ldWOfyoPF2MEvgbSoNGeZesFqNi2w5Oa/view?usp=drivesdk">PDF</a>
+          <a href="https://drive.google.com/file/d/12tZmnS3Hu9hld6ig7JjwdQZE89GaUnj2/view?usp=sharing" target="_blank" class="bls-download-btn">POSTER</a>
+        </div>
+      </div>
+    </div>
+
+<!-- محتوى الفيديو والملفات Part 4 -->
+    <div id="fluids4" class="topic-details">
+      <div class="section-header">
+        <h2 class="section-title">الفيديو التعليمي</h2>
+        <p class="section-subtitle">Physical assessment – Part 4</p>
+      </div>
+      <div class="topic-video">
+        <iframe src="https://www.youtube.com/embed/fjOeJssZX_Q" allowfullscreen></iframe>
+      </div>
+      <div class="section-header">
+        <h2 class="section-title">المصادر التعليمية</h2>
+      </div>
+      <div class="bls-files">
+        <img src="https://nphwfavjieuzqlagjnsw.supabase.co/storage/v1/object/public/Hyperfit/F%20E.png" alt="Resources Part 2">
+        <div class="bls-buttons">
+          <a href="https://drive.google.com/file/d/1FYwGUiSVQ1sDb68ALZxlj0Nw86v_Rj7U/view?usp=drivesdk">PDF</a>
+          <a href="https://drive.google.com/file/d/1FYwGUiSVQ1sDb68ALZxlj0Nw86v_Rj7U/view?usp=drivesdk" class="bls-download-btn">POSTER</a>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- /.container -->
+</section>
+
+
+
+
+  <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">عن Dweekat Nursing Hub</h2>
+                <p class="section-subtitle">مصدرك الشامل لكل ما يتعلق بالتمريض</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Dweekat Nursing Hub هو مصدر شامل لكل مهارات التمريض، يحتوي على فيديوهات تعليمية، ملفات PDF جاهزة، وملخصات عملية لتسهيل التعلم. نهدف إلى توفير محتوى تعليمي عالي الجودة يساعد الممرضين والطلاب على تطوير مهاراتهم وتحسين مستوى الرعاية الصحية.
+                    </p>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>تعلم سريع</h3>
+                        <p>محتوى منظم ومركز يساعدك على التعلم بكفاءة</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>فيديوهات تعليمية</h3>
+                        <p>شروحات مرئية واضحة لكل المهارات التمريضية</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-download"></i>
+                        </div>
+                        <h3>ملفات جاهزة</h3>
+                        <p>ملفات PDF وPPT قابلة للتحميل والطباعة</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>دعم متواصل</h3>
+                        <p>دعم مستمر عبر قنوات التواصل الاجتماعي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">لماذا تختار Dweekat Nursing Hub؟</h2>
+                <p class="section-subtitle">أبرز المميزات التي تجعلنا الخيار الأمثل</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="fas fa-star"></i>
+                    <h3>أحدث طرق التمريض</h3>
+                    <p>محتوى محدث باستمرار يواكب أحدث المعايير الدولية في التمريض</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-print"></i>
+                    <h3>ملفات قابلة للطباعة</h3>
+                    <p>جميع الملفات متاحة بصيغ سهلة الطباعة للمراجعة السريعة</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-play-circle"></i>
+                    <h3>دروس فيديو تفاعلية</h3>
+                    <p>فيديوهات عالية الجودة مع شروحات تفصيلية وأمثلة عملية</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>متابعة مستمرة للتحديثات</h3>
+                    <p>إضافة محتوى جديد بشكل دوري لضمان البقاء على اطلاع دائم</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivation Section -->
+    <section class="motivation">
+        <div class="container">
+            <div class="motivation-content">
+                <div class="quote-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <p class="quote-text">الممرضون هم خط الدفاع الأول عن حياة المرضى</p>
+                    <div class="quote-line"></div>
+                </div>
+
+                <div class="quote-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <p class="quote-text">التعلم المستمر هو سر التميز في التمريض</p>
+                    <div class="quote-line"></div>
+                </div>
+
+                <div class="motivation-icons">
+                    <div class="motiv-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>تعلم</p>
+                    </div>
+                    <div class="motiv-icon">
+                        <i class="fas fa-chart-line"></i>
+                        <p>تطور</p>
+                    </div>
+                    <div class="motiv-icon">
+                        <i class="fas fa-trophy"></i>
+                        <p>تميز</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="register" id="contact">
+  <div class="container">
+    <div class="register-wrapper">
+
+      <!-- العمود الأول: المعلومات -->
+      <div class="register-info">
+        <h2>التواصل للخدمات الخاصة</h2>
+        <p>للحصول على شرح خاص أو ملفات مخصصة، تواصل معنا مباشرة عبر واتساب أو تلجرام</p>
+        <ul class="register-benefits">
+          <li><i class="fas fa-check-circle"></i> ملفات خاصة مخصصة حسب الطلب</li>
+          <li><i class="fas fa-check-circle"></i> شروحات مفصلة مدفوعة</li>
+          <li><i class="fas fa-check-circle"></i> دعم شخصي عبر الواتساب أو تلجرام</li>
+        </ul>
+      </div>
+
+      <!-- العمود الثاني: أزرار التواصل -->
+      <div class="register-form">
+        <a href="https://chat.whatsapp.com/k6ojtosgezu6n3wjlitl92" target="_blank" class="contact-btn whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          تواصل عبر واتساب
+        </a>
+        <a href="https://t.me/DNHedu" target="_blank" class="contact-btn telegram">
+          <i class="fab fa-telegram"></i>
+          تواصل عبر تلجرام
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <p class="section-subtitle">إجابات على أكثر الأسئلة شيوعاً</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كيف يمكنني تحميل الملفات؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>اضغط على أيقونة التحميل بجانب كل ملف (PDF أو PPT) في قسم المواضيع، وسيتم تحميل الملف مباشرة على جهازك.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل الفيديوهات تعمل على الهاتف؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، جميع الفيديوهات متجاوبة وتعمل بشكل ممتاز على جميع الأجهزة بما فيها الهواتف الذكية والأجهزة اللوحية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل هناك شهادات بعد إكمال المواضيع؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>حالياً، المنصة تقدم موارد تعليمية فقط. نحن نعمل على إضافة ميزة الشهادات في التحديثات القادمة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Dweekat Nursing Hub</span>
+                    </div>
+                    <p class="footer-description">
+                        منصة تعليمية شاملة للممرضين والطلاب، نوفر أفضل المحتويات التعليمية والموارد المتخصصة في مجال التمريض.
+                    </p>
+                     <div class="social-links">
+                    <a href="https://www.facebook.com/DweekatNH/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://chat.whatsapp.com/k6ojtosgezu6n3wjlitl92" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/DNHedu" target="_blank" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@DNHedu/videos" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    </a>
+                    <a href="mailto:DNHedu@outlook.com" target="_blank" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                </div>
+
+               <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#topics">المواضيع</a></li>
+                        <li><a href="index.html#about">عن التمريض</a></li>
+                        <li><a href="index.html#contact">تواصل معنا</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>المواضيع</h3>
+                    <ul class="footer-links">
+                        <li><a href="#topics">BLS</a></li>
+                        <li><a href="#topics">ACLS</a></li>
+                        <li><a href="#topics">PALS</a></li>
+                        <li><a href="#topics">ICU Nursing</a></li>
+                        <li><a href="#topics">Emergency Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>اشترك في النشرة البريدية</h3>
+                    <p>احصل على آخر التحديثات والمحتوى الجديد</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dweekat Nursing Hub. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+<style>
+/* ===== Single Card Layout ===== */
+.single-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 300px));
+  justify-content: center;
+  gap: 30px;
+}
+
+/* الكارد مربع */
+.fluids-card {
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+/* محتوى الفيديو */
+.topic-details {
+  display: none;
+  margin-top: 60px;
+}
+
+</style>
+
+
+<script>
+function toggleContent(id) {
+  const target = document.getElementById(id);
+  if (!target) return;
+
+  if (target.style.display === 'block') {
+    target.style.display = 'none';
+  } else {
+    document.querySelectorAll('.topic-details').forEach(el => {
+      el.style.display = 'none';
+    });
+    target.style.display = 'block';
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+const quizData = [
+  {
+    question: "A client with atrial fibrillation receiving warfarin has a PT of 35 seconds. Which prescription does the nurse anticipate?",
+    options: [
+      "Adding a dose of heparin sodium",
+      "Holding the next dose of warfarin",
+      "Increasing the next dose of warfarin",
+      "Administering the next dose of warfarin"
+    ],
+    answer: 1,
+    rationale: "A PT of 35 seconds is excessively prolonged and places the client at risk for bleeding. Warfarin should be held."
+  },
+  {
+    question: "Which statement by a new graduate nurse indicates the need for further teaching regarding chronic pain management?",
+    options: [
+      "Asking the client to rate pain from 0 to 10",
+      "Following up after administering pain medication",
+      "Looking for signs the client is exaggerating pain",
+      "Recognizing pain in older adults may present as depression"
+    ],
+    answer: 2,
+    rationale: "Pain is subjective and nurses should never assume exaggeration."
+  },
+  {
+    question: "A client admitted with dehydration has received adequate fluid replacement when the BUN reaches which value?",
+    options: [
+      "3 mg/dL",
+      "15 mg/dL",
+      "29 mg/dL",
+      "35 mg/dL"
+    ],
+    answer: 1,
+    rationale: "Normal BUN is 10–20 mg/dL. A value of 15 mg/dL indicates adequate hydration."
+  },
+  {
+    question: "Which temperature-measurement method indicates the need for further teaching?",
+    options: [
+      "Rectal temperature after nasal surgery",
+      "Oral temperature with nasal congestion",
+      "Axillary temperature after hot coffee",
+      "Electronic temperature behind the ear when diaphoretic"
+    ],
+    answer: 1,
+    rationale: "Oral temperatures should be avoided with nasal congestion."
+  },
+  {
+    question: "A client receiving IV heparin has an aPTT of 65 seconds. What action should the nurse take?",
+    options: [
+      "Stop the infusion",
+      "Increase the rate",
+      "Decrease the rate",
+      "Leave the rate unchanged"
+    ],
+    answer: 3,
+    rationale: "Therapeutic aPTT range for heparin is 45–100 seconds."
+  },
+  {
+    question: "Which potassium level should be reported before giving furosemide?",
+    options: [
+      "3.2 mEq/L",
+      "3.8 mEq/L",
+      "4.2 mEq/L",
+      "4.8 mEq/L"
+    ],
+    answer: 0,
+    rationale: "Potassium below 3.5 mEq/L increases risk for dysrhythmias."
+  },
+  {
+    question: "Which laboratory results should be reported? (Select all that apply)",
+    options: [
+      "Platelets 35,000 mm³",
+      "Sodium 150 mEq/L",
+      "Potassium 5.0 mEq/L",
+      "Segmented neutrophils 40%",
+      "Creatinine 1 mg/dL",
+      "WBC 3000 mm³"
+    ],
+    answer: [0,1,3,5],
+    rationale: "These values are outside normal ranges and require reporting."
+  },
+  {
+    question: "The nurse should notify the PHCP if a client taking ibuprofen also takes which medications? (Select all that apply)",
+    options: [
+      "Warfarin",
+      "Glimepiride",
+      "Amlodipine",
+      "Simvastatin",
+      "Atorvastatin"
+    ],
+    answer: [0,1,2],
+    rationale: "Ibuprofen interacts with anticoagulants, antidiabetics, and calcium channel blockers."
+  },
+  {
+    question: "A client has an HbA1c of 8%. Teaching should focus on which measure?",
+    options: [
+      "Avoiding infection",
+      "Adequate fluid intake",
+      "Preventing hypoglycemia",
+      "Preventing hyperglycemia"
+    ],
+    answer: 3,
+    rationale: "An elevated HbA1c reflects poor glycemic control and hyperglycemia."
+  },
+  {
+    question: "Neutropenic precautions are indicated with which WBC count?",
+    options: [
+      "2000 mm³",
+      "5800 mm³",
+      "8400 mm³",
+      "11,500 mm³"
+    ],
+    answer: 0,
+    rationale: "WBC count significantly below normal indicates immunosuppression."
+  },
+  {
+    question: "A client accidentally doubled their warfarin dose for a week. What should the nurse do first?",
+    options: [
+      "Administer an antidote",
+      "Prepare for transfusion",
+      "Draw an aPTT",
+      "Draw PT and INR"
+    ],
+    answer: 3,
+    rationale: "PT and INR determine warfarin effect and bleeding risk."
+  },
+  {
+    question: "A postoperative client on PCA hydromorphone is drowsy with RR 11. What action should the nurse take first?",
+    options: [
+      "Document findings",
+      "Attempt to arouse the client",
+      "Notify the PHCP",
+      "Check PCA history"
+    ],
+    answer: 1,
+    rationale: "The client should be assessed first to rule out opioid overdose."
+  },
+  {
+    question: "A hemoglobin of 10.8 g/dL is most likely due to which condition?",
+    options: [
+      "Dehydration",
+      "Heart failure",
+      "Iron-deficiency anemia",
+      "COPD"
+    ],
+    answer: 2,
+    rationale: "Iron-deficiency anemia causes decreased hemoglobin levels."
+  },
+  {
+    question: "A platelet count of 300,000 mm³ requires which action?",
+    options: [
+      "Report low count",
+      "Report high count",
+      "Initiate bleeding precautions",
+      "File as normal result"
+    ],
+    answer: 3,
+    rationale: "This platelet count is within the normal range."
+  }
+];
+
+let currentQuestion = 0;
+let userAnswers = [];
+
+function openQuiz() {
+  document.getElementById('quizOverlay').style.display = 'flex';
+  currentQuestion = 0;
+  userAnswers = [];
+  showQuestion();
+}
+
+function closeQuiz() {
+  document.getElementById('quizOverlay').style.display = 'none';
+}
+
+function showQuestion() {
+  const q = quizData[currentQuestion];
+  const container = document.getElementById('quizContent');
+  container.innerHTML = `
+    <h3 style="text-align:right">${q.question}</h3>
+    <ul class="quiz-options" style="text-align:right; direction:rtl; list-style:none; padding:0;">
+      ${q.options.map((opt,i) => `<li style="border:1px solid #ccc; margin:5px 0; padding:10px; cursor:pointer;" onclick="selectAnswer(${i})">${opt}</li>`).join('')}
+    </ul>
+    <div class="quiz-buttons" style="margin-top:10px;">
+      <button onclick="prevQuestion()" ${currentQuestion===0?'disabled':''}>Previous</button>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+  `;
+}
+
+function selectAnswer(index) {
+  userAnswers[currentQuestion] = index;
+  const options = document.querySelectorAll('.quiz-options li');
+  options.forEach(opt => opt.style.pointerEvents='none'); // منع إعادة الضغط
+  options[index].style.backgroundColor = "#d3d3d3"; // تمييز الإجابة المختارة
+}
+
+function nextQuestion() {
+  if(currentQuestion < quizData.length - 1){
+    currentQuestion++;
+    showQuestion();
+  } else {
+    showResults();
+  }
+}
+
+function prevQuestion() {
+  if(currentQuestion > 0){
+    currentQuestion--;
+    showQuestion();
+  }
+}
+
+function showResults() {
+  const container = document.getElementById('quizContent');
+  let score = 0;
+  let html = '<h3 style="text-align:right">Quiz Finished!</h3>';
+
+  quizData.forEach((q,i)=>{
+    const user = userAnswers[i];
+    const correct = q.answer;
+    if(user === correct) score++;
+    html += `<div style="text-align:right; margin:15px 0; padding:10px; border:1px solid #ccc; border-radius:8px;">
+      <p><strong>Q${i+1}:</strong> ${q.question}</p>
+      <ul style="list-style:none; padding:0;">`;
+    q.options.forEach((opt,j)=>{
+      let cls='';
+      if(j===correct) cls='color:green; font-weight:bold;';
+      else if(j===user) cls='color:red;';
+      html += `<li style="${cls}">${opt}</li>`;
+    });
+    html += `</ul>
+      <p><strong>Rationale:</strong> ${q.rationale}</p>
+    </div>`;
+  });
+
+  html += `<h4 style="text-align:right">Your score: ${score} / ${quizData.length}</h4>
+           <button onclick="openQuiz()">Retry Quiz</button>`;
+
+  container.innerHTML = html;
+}
+</script>
+
+
+</body>
+</html>

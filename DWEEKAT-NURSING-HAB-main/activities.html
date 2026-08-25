@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dweekat Nursing Hub | Activities</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{background:#0f2027;color:#fff}
+
+/* NAVBAR */
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+z-index:10000;
+}
+.navbar a{color:#fff;text-decoration:none;margin-left:20px;font-weight:600}
+.logo{font-weight:800;font-size:20px;color:#00ffa6}
+
+  .hamburger {
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+  gap:5px;
+}
+
+.hamburger span {
+  height:3px;
+  width:25px;
+  background:#00ffa6;
+  border-radius:2px;
+}
+
+/* Media Queries للهواتف */
+@media (max-width:768px) {
+  .nav-links {
+    position:fixed;
+    top:60px;
+    right:-100%;
+    background:rgba(0,0,0,0.9);
+    height:100vh;
+    width:200px;
+    flex-direction:column;
+    padding:20px;
+    gap:15px;
+    transition:0.3s;
+  }
+  .nav-links.show {
+    right:0;
+  }
+  .hamburger {
+    display:flex;
+  }
+}
+/* HERO */
+.hero{
+height:60vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding-top:80px;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+.hero h1{font-size:42px;font-weight:800}
+.hero p{margin-top:15px;opacity:.8}
+
+section{padding:80px 8%}
+
+/* GLASS CARD */
+.card, .partner-card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.2);
+transition:.4s;
+}
+.card:hover, .partner-card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 0 25px rgba(0,255,166,.4);
+}
+
+.activities-grid, .partner-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card img{width:100%;height:180px;object-fit:cover;border-radius:20px 20px 0 0}
+.card-content{padding:20px}
+.card-title{font-weight:700;margin-bottom:8px}
+.card-desc{opacity:.8;font-size:14px}
+
+.badge{
+position:absolute;
+top:15px;
+left:15px;
+background:#00ffa6;
+color:#000;
+padding:5px 12px;
+border-radius:50px;
+font-size:12px;
+font-weight:700;
+}
+
+.partner-card{padding:30px;text-align:center;cursor:pointer}
+.partner-card img{width:90px;margin-bottom:15px}
+
+/* WHY */
+.why{text-align:center;max-width:900px;margin:auto}
+.why h2{margin-bottom:20px}
+
+/* COUNTERS */
+.counters{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+margin-top:40px;
+text-align:center;
+}
+.counter-box{
+padding:30px;
+border-radius:20px;
+background:rgba(0,255,166,.08);
+border:1px solid rgba(0,255,166,.3);
+}
+.counter{font-size:32px;font-weight:800;color:#00ffa6}
+
+/* MODAL */
+.modal{
+position:fixed;
+top:0;left:0;width:100%;height:100%;
+background:rgba(0,0,0,.85);
+display:none;
+justify-content:center;
+align-items:center;
+padding:20px;
+z-index:9999;
+}
+.modal-content{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border-radius:25px;
+padding:35px;
+max-width:700px;width:100%;
+border:1px solid rgba(255,255,255,0.2);
+animation:fadeIn .4s ease;
+}
+@keyframes fadeIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+.close{cursor:pointer;color:#00ffa6;font-size:22px;float:left}
+
+.insta-btn, .register-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+border-radius:10px;
+background:linear-gradient(45deg,#00ffa6,#00cfff);
+color:#000;
+text-decoration:none;
+font-weight:700;
+}
+
+/* FOOTER */
+.footer{
+background:#08171d;
+padding:40px 8%;
+text-align:center;
+margin-top:80px;
+}
+.footer p{opacity:.7;font-size:14px}
+
+  .card.ended .register-btn{
+  display:none;
+}
+</style>
+<link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dhcpucpyf/image/upload/w_32,h_32,c_fill/v1769023270/Blue_and_White_Illustrative_Doctor_Health_Care_Logo_arp39l.png">
+</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">Dweekat Nursing Hub</div>
+
+  <!-- روابط النافبار -->
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">الرئيسية</a>
+    <a href="#activities">الأنشطة</a>
+    <a href="partners.html">شركاؤنا</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">تواصل معنا</a>
+    <a href="contributors.html">المساهمون التعليميون</a>
+  </div>
+
+  <!-- هامبرغر للموبايل -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+</div>
+</div>
+contact.html
+<!-- HERO -->
+<div class="hero">
+<h1>الأنشطة والتدريب</h1>
+<p>نربط الدراسة بالتطبيق من خلال ورش وأنشطة ميدانية احترافية</p>
+</div>
+
+<!-- ACTIVITIES -->
+<section id="activities">
+<h2 style="text-align:center">أحدث الأنشطة</h2>
+<div class="activities-grid">
+
+<!-- نشاط 1 -->
+<div class="card ended" style="position:relative">
+  <span class="badge">منتهى</span>
+  <img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1771829499/Check_the_link_in_the_bio_.._nursing_%D8%AA%D9%85%D8%B1%D9%8A%D8%B6_eox2z0.jpg" alt="ورشة فن كتابة السيرة الذاتية">
+  <div class="card-content">
+    <div class="card-title">ورشة فن كتابة السيرة الذاتية للتمريض</div>
+    <div class="card-desc">تعليم طلاب التمريض كيفية كتابة سيرة ذاتية احترافية تعكس مهاراتهم وقدراتهم المهنية.</div>
+
+    <a href="#" class="register-btn" onclick="openForm('ورشة فن كتابة السيرة الذاتية للتمريض')">
+      التسجيل الآن
+    </a>
+  </div>
+</div>
+  
+<!-- نشاط 2 -->
+<div class="card" style="position:relative">
+<span class="badge">منتهى</span>
+<img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1771830310/547868198_18056210345573173_2535570327283848766_n_mtl9ns.jpg" alt="ورشة الإسعافات الأولية">
+<div class="card-content">
+<div class="card-title">ورشة الإسعافات الأولية – مهارة تنقذ حياة</div>
+<div class="card-desc">نشاط تدريبي عملي لتطوير مهارات الطلاب في الإسعافات الأساسية.</div>
+</div>
+</div>
+
+
+<!-- نشاط 4 -->
+<div class="card" style="position:relative">
+<span class="badge">منتهى</span>
+<img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1771829821/IMG_0323_aztga0.jpg" alt="ورشة صناعة المحتوى الطبي">
+<div class="card-content">
+<div class="card-title">ورشة صناعة المحتوى للمجال الطبي</div>
+<div class="card-desc">اكتساب مهارات إنتاج محتوى طبي وتعليمي متميز متخصص بالتمريض والتثقيف الصحي.</div>
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- EXTRA INFO مثل الاندكس -->
+<div style="margin-top:90px">
+<h3 style="text-align:center;margin-bottom:30px">لماذا منصة Dweekat Nursing Hub؟</h3>
+
+<div style="max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px">
+
+<div class="partner-card" style="cursor:default">
+<h3>التعليم الحديث</h3>
+<p>نقدّم محتوى تفاعلي حديث يشمل فيديوهات، ملفات PDF، وملخصات تساعد الطالب على الفهم السريع والمراجعة الفعالة.</p>
+</div>
+
+<div class="partner-card" style="cursor:default">
+<h3>التدريب العملي</h3>
+<p>نوفر فرص تدريب وورش مهارية بالتعاون مع شركائنا لربط الجانب النظري بالتطبيق الواقعي داخل المجال الصحي.</p>
+</div>
+
+<div class="partner-card" style="cursor:default">
+<h3>التحضير لـ NCLEX</h3>
+<p>نظام اختبارات محوسب مع Rational كامل يساعد الطالب على التفكير السريري والاستعداد لسوق العمل والامتحانات العالمية.</p>
+</div>
+
+<div class="partner-card" style="cursor:default">
+<h3>مجتمع تمريضي</h3>
+<p>نسعى لبناء مجتمع داعم لطلاب التمريض من خلال المبادرات، الأنشطة، والعمل التطوعي داخل الأردن وخارجه.</p>
+</div>
+
+
+</div>
+</div>
+
+</div>
+</section>
+
+
+
+
+<!-- PARTNERS -->
+<section id="partners">
+  <h2 style="text-align:center;margin-bottom:40px">شركاؤنا</h2>
+  <div class="partner-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;">
+
+    <div class="partner-card" onclick="openModal()" style="padding:30px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;height:300px;background:rgba(255,255,255,0.08);backdrop-filter:blur(12px);border-radius:20px;border:1px solid rgba(255,255,255,0.2);transition:0.4s">
+      <img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1771794986/IMG_9579_crgenm.jpg" alt="Oxygen Initiative" style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin-bottom:20px;border:2px solid #00ffa6;">
+      <h3 style="text-align:center;margin-bottom:10px;font-size:20px">Oxygen Initiative</h3>
+      <p style="text-align:center;font-size:14px;opacity:0.8">شريك استراتيجي لدعم التدريب والأنشطة الصحية.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="oxygenModal">
+  <div class="modal-content" style="text-align:center">
+    <span class="close" onclick="closeModal()">✕</span>
+    <img src="https://res.cloudinary.com/dhcpucpyf/image/upload/v1771794986/IMG_9579_crgenm.jpg" alt="Oxygen Initiative" style="width:150px;height:150px;border-radius:50%;margin-bottom:20px;border:3px solid #00ffa6;">
+    <h2>Oxygen Initiative</h2>
+    <p>مبادرة تطوعية تهدف لتطوير مهارات طلاب التمريض أكاديميًا وعمليًا وتعزيز دورهم المجتمعي.</p>
+    <a href="https://www.instagram.com/nursing.jo" target="_blank" class="insta-btn" style="display:inline-block;margin-top:15px;padding:10px 20px;border-radius:10px;background:linear-gradient(45deg,#00ffa6,#00cfff);color:#000;text-decoration:none;font-weight:700;">متابعة على إنستغرام</a>
+  </div>
+</div>
+
+<style>
+.partner-card:hover {
+  transform:translateY(-10px) scale(1.02);
+  box-shadow:0 0 25px rgba(0,255,166,0.4);
+}
+.modal-content {
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(15px);
+  border-radius:25px;
+  padding:35px;
+  max-width:500px;
+  width:100%;
+  border:1px solid rgba(255,255,255,0.2);
+  animation:fadeIn .4s ease;
+}
+@keyframes fadeIn {
+  from {opacity:0;transform:scale(.9)}
+  to {opacity:1;transform:scale(1)}
+}
+</style>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- نموذج التسجيل (مودال زجاجي) -->
+<div class="modal" id="registrationModal">
+  <div class="modal-content" style="text-align:right;direction:rtl;max-width:500px;width:90%;padding:30px;background:rgba(255,255,255,0.08);backdrop-filter:blur(15px);border-radius:25px;border:1px solid rgba(255,255,255,0.2);">
+    <span class="close" onclick="closeForm()" style="float:left;font-size:22px;color:#00ffa6;cursor:pointer;">✕</span>
+    <h2 style="margin-bottom:15px;font-size:24px;font-weight:700;color:#00ffa6;">تسجيل في النشاط</h2>
+    <p style="opacity:0.8;margin-bottom:20px;">الرجاء تعبئة بياناتك لإتمام التسجيل:</p>
+    
+    <form id="registerForm" action="https://formspree.io/f/mykdbebg" method="POST">
+      <input type="hidden" id="activityName" name="activity">
+      
+      <input type="text" id="name" name="name" required placeholder="الاسم الكامل" style="width:100%;padding:12px;margin-bottom:12px;border-radius:12px;border:none;background:rgba(255,255,255,0.08);color:#fff;outline:none">
+      <input type="email" id="email" name="email" required placeholder="البريد الإلكتروني" style="width:100%;padding:12px;margin-bottom:12px;border-radius:12px;border:none;background:rgba(255,255,255,0.08);color:#fff;outline:none">
+      <input type="text" id="phone" name="phone" required placeholder="رقم الهاتف" style="width:100%;padding:12px;margin-bottom:12px;border-radius:12px;border:none;background:rgba(255,255,255,0.08);color:#fff;outline:none">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="">
+      <button type="submit" style="width:100%;padding:12px;margin-top:10px;border-radius:12px;border:none;background:linear-gradient(45deg,#00ffa6,#00cfff);color:#000;font-weight:700;cursor:pointer;">إرسال التسجيل</button>
+    </form>
+    
+    <p id="formMessage" style="margin-top:10px;font-size:14px;opacity:0.8;"></p>
+  </div>
+</div>
+  
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;max-width:1200px;margin:auto">
+    <!-- روابط سريعة -->
+    <div class="footer-section">
+      <h3 style="color:#00ffa6;margin-bottom:15px">روابط سريعة</h3>
+      <ul style="list-style:none;line-height:2">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="index.html#subject">المواضيع</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact">تواصل معنا</a></li>
+        <li><a href="Privacy.html">سياسة الخصوصية</a></li>
+        <li><a href="terms-of-use.html">شروط الاستخدام</a></li>
+        <li><a href="disclaimer.html">إخلاء المسؤولية</a></li>
+      </ul>
+    </div>
+
+    <!-- المواضيع -->
+    <div class="footer-section">
+      <h3 style="color:#00ffa6;margin-bottom:15px">المواضيع</h3>
+      <ul style="list-style:none;line-height:2">
+        <li><a href="foundation.html">foundation of care</a></li>
+        <li><a href="intro.html">Introduction to Nursing</a></li>
+        <li><a href="psyc.html">Nursing Psycology</a></li>
+        <li><a href="nutrition.html">Nutrition </a></li>
+        <li><a href="Adult-Nursing.html">Adult health Nursing</a></li>
+      </ul>
+    </div>
+
+    <!-- النشرة البريدية + روابط اجتماعية -->
+    <div class="footer-section">
+      <h3 style="color:#00ffa6;margin-bottom:15px">اشترك في النشرة البريدية</h3>
+      <p style="opacity:.8;font-size:14px">احصل على آخر التحديثات والمحتوى الجديد</p>
+      <form class="newsletter-form" style="display:flex;gap:5px;margin-top:10px">
+        <input type="email" placeholder="بريدك الإلكتروني" required style="flex:1;padding:10px 15px;border-radius:12px;border:none;background:rgba(255,255,255,0.08);color:#fff;outline:none">
+        <button type="submit" style="padding:10px 20px;border-radius:12px;border:none;background:linear-gradient(45deg,#00ffa6,#00cfff);color:#000;font-weight:700;cursor:pointer">
+          إرسال
+        </button>
+      </form>
+
+      <!-- روابط التواصل الاجتماعي -->
+      <div class="social-links" style="margin-top:20px;display:flex;gap:15px">
+        <a href="https://www.facebook.com/DweekatNH/" target="_blank" title="Facebook" style="color:#00ffa6;font-size:22px"><i class="fab fa-facebook"></i></a>
+        <a href="https://chat.whatsapp.com/k6ojtosgezu6n3wjlitl92" target="_blank" title="WhatsApp" style="color:#00ffa6;font-size:22px"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/DNHedu" target="_blank" title="Telegram" style="color:#00ffa6;font-size:22px"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.youtube.com/@DNHedu/videos" target="_blank" title="YouTube" style="color:#00ffa6;font-size:22px"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:DNHedu@outlook.com" target="_blank" title="Email" style="color:#00ffa6;font-size:22px"><i class="fas fa-envelope"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <p style="text-align:center;margin-top:40px;opacity:.6;font-size:14px">© 2026 Dweekat Nursing Hub - جميع الحقوق محفوظة</p>
+</div>
+
+<style>
+.footer{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(15px);
+  border-top:1px solid rgba(255,255,255,0.2);
+  padding:60px 8% 40px 8%;
+  color:#fff;
+}
+.footer a{
+  color:#fff;
+  text-decoration:none;
+  transition:.3s;
+}
+.footer a:hover{
+  color:#00ffa6;
+}
+.footer h3{
+  font-weight:700;
+}
+.social-links a{
+  transition:.3s;
+}
+.social-links a:hover{
+  transform:scale(1.2);
+  color:#00cfff;
+}
+</style>
+<script>
+function openModal(){document.getElementById('oxygenModal').style.display='flex'}
+function closeModal(){document.getElementById('oxygenModal').style.display='none'}
+
+const counters=document.querySelectorAll('.counter');
+counters.forEach(counter=>{
+const update=()=>{
+const target=+counter.getAttribute('data-target');
+const count=+counter.innerText;
+const inc=target/100;
+if(count<target){counter.innerText=Math.ceil(count+inc);setTimeout(update,20)}
+else{counter.innerText=target+'+'}
+}
+update();
+});
+  const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+function openForm(activity){
+  document.getElementById('registerModal').style.display='flex';
+  document.getElementById('activityName').value = activity;
+}
+
+function closeForm(){
+  document.getElementById('registerModal').style.display='none';
+}
+
+// إغلاق عند الضغط خارج الـ modal
+window.onclick = function(event){
+  if(event.target == document.getElementById('registerModal')){
+    closeForm();
+  }
+}
+document.getElementById('activityForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  
+  emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+      activity: document.getElementById('activityName').value,
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value
+  }).then(function(response){
+      document.getElementById('formMessage').innerText = "تم إرسال التسجيل بنجاح!";
+      document.getElementById('activityForm').reset();
+  }, function(error){
+      document.getElementById('formMessage').innerText = "حدث خطأ، حاول لاحقاً.";
+  });
+});
+
+  function openForm(activity){
+  document.getElementById('registrationModal').style.display='flex';
+  document.getElementById('activityName').value = activity;
+}
+
+function closeForm(){
+  document.getElementById('registrationModal').style.display='none';
+}
+
+window.onclick = function(event){
+  if(event.target == document.getElementById('registrationModal')){
+    closeForm();
+  }
+}
+
+// إرسال بدون نقل الصفحة
+const form = document.getElementById("registerForm");
+const message = document.getElementById("formMessage");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    message.innerHTML = "✅ تم التسجيل بنجاح، سيتم التواصل معك قريباً.";
+    message.style.color = "#00ffa6";
+    form.reset();
+
+    setTimeout(() => {
+      closeForm();
+      message.innerHTML = "";
+    }, 2000);
+  } else {
+    message.innerHTML = "❌ حدث خطأ، حاول مرة أخرى.";
+    message.style.color = "red";
+  }
+});
+
+</script>
+
+  
+</div>
+</body>
+</html>
