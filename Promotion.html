@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Promotion | DWEEKAT Nursing Hub</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dhcpucpyf/image/upload/w_32,h_32,c_fill/v1769023270/Blue_and_White_Illustrative_Doctor_Health_Care_Logo_arp39l.png">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container header-content">
+    <div class="logo">
+      <i class="fas fa-heartbeat"></i>
+      <span>DWEEKAT Nursing Hub</span>
+    </div>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="index.html#topics">المواضيع</a></li>
+        <li><a href="Adult-Health-Nursing1.html" class="nav-link active">Health Promotion</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" style="padding:140px 0 80px;">
+  <div class="hero-content" style="text-align:center;">
+
+    <h1 class="hero-title">الوقاية والارتقاء بالصحة</h1>
+
+    <p class="hero-description">
+      مادة تعزيز الصحة تهدف إلى تعليم الطالب كيفية تعزيز الصحة العامة والوقاية من الأمراض داخل المجتمع والأفراد. تركز المادة على تطوير مهارات التثقيف الصحي، التخطيط وتنفيذ البرامج الصحية، وتطبيق استراتيجيات لتعزيز السلوكيات الصحية الإيجابية. كما تهتم بفهم العوامل المؤثرة في الصحة مثل التغذية، النشاط البدني، البيئة، والعادات اليومية، بهدف تحسين جودة الحياة والحد من المخاطر الصحية.
+    </p>
+
+    <button class="syllabus-btn" onclick="openModal()" style="margin-top:30px;">
+      📚 محتويات المادة
+    </button>
+
+  </div>
+</section>
+
+
+<!-- ================= SYLLABUS MODAL ================= -->
+<div class="modal" id="syllabusModal">
+
+  <div class="modal-content modern-modal">
+
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2 class="modal-title">
+      <i class="fas fa-book-medical"></i>
+      Health Promotion - Syllabus
+    </h2>
+
+    <div class="syllabus-grid">
+
+  <div class="syllabus-card">
+    <i class="fas fa-book-medical"></i>
+    <h3>Foundations of Health Promotion and Disease Prevention</h3>
+  </div>
+
+  <div class="syllabus-card">
+    <i class="fas fa-user-nurse"></i>
+    <h3>Nurse-Patient Relationship</h3>
+  </div>
+
+  <div class="syllabus-card">
+    <i class="fas fa-user-check"></i>
+    <h3>Health Promotion and the Individual</h3>
+  </div>
+
+  <div class="syllabus-card">
+    <i class="fas fa-home"></i>
+    <h3>Health Promotion and the Family</h3>
+  </div>
+
+  <div class="syllabus-card">
+    <i class="fas fa-search"></i>
+    <h3>Screening</h3>
+  </div>
+
+  <div class="syllabus-card">
+    <i class="fas fa-chalkboard-teacher"></i>
+    <h3>Health Education</h3>
+  </div>
+
+  <div class="syllabus-card">
+    <i class="fas fa-dumbbell"></i>
+    <h3>Exercise</h3>
+  </div>
+
+  <div class="syllabus-card">
+    <i class="fas fa-apple-alt"></i>
+    <h3>Nutrition Counseling and Health Promotion</h3>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+
+<!-- ================= SCRIPT ================= -->
+<script>
+
+function openModal() {
+  document.getElementById("syllabusModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("syllabusModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+  let modal = document.getElementById("syllabusModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+  <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">عن Dweekat Nursing Hub</h2>
+                <p class="section-subtitle">مصدرك الشامل لكل ما يتعلق بالتمريض</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Dweekat Nursing Hub هو مصدر شامل لكل مهارات التمريض، يحتوي على فيديوهات تعليمية، ملفات PDF جاهزة، وملخصات عملية لتسهيل التعلم. نهدف إلى توفير محتوى تعليمي عالي الجودة يساعد الممرضين والطلاب على تطوير مهاراتهم وتحسين مستوى الرعاية الصحية.
+                    </p>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>تعلم سريع</h3>
+                        <p>محتوى منظم ومركز يساعدك على التعلم بكفاءة</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>فيديوهات تعليمية</h3>
+                        <p>شروحات مرئية واضحة لكل المهارات التمريضية</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-download"></i>
+                        </div>
+                        <h3>ملفات جاهزة</h3>
+                        <p>ملفات PDF وPPT قابلة للتحميل والطباعة</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>دعم متواصل</h3>
+                        <p>دعم مستمر عبر قنوات التواصل الاجتماعي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">لماذا تختار Dweekat Nursing Hub؟</h2>
+                <p class="section-subtitle">أبرز المميزات التي تجعلنا الخيار الأمثل</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="fas fa-star"></i>
+                    <h3>أحدث طرق التمريض</h3>
+                    <p>محتوى محدث باستمرار يواكب أحدث المعايير الدولية في التمريض</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-print"></i>
+                    <h3>ملفات قابلة للطباعة</h3>
+                    <p>جميع الملفات متاحة بصيغ سهلة الطباعة للمراجعة السريعة</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-play-circle"></i>
+                    <h3>دروس فيديو تفاعلية</h3>
+                    <p>فيديوهات عالية الجودة مع شروحات تفصيلية وأمثلة عملية</p>
+                </div>
+
+                <div class="feature-box">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>متابعة مستمرة للتحديثات</h3>
+                    <p>إضافة محتوى جديد بشكل دوري لضمان البقاء على اطلاع دائم</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivation Section -->
+    <section class="motivation">
+        <div class="container">
+            <div class="motivation-content">
+                <div class="quote-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <p class="quote-text">الممرضون هم خط الدفاع الأول عن حياة المرضى</p>
+                    <div class="quote-line"></div>
+                </div>
+
+                <div class="quote-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <p class="quote-text">التعلم المستمر هو سر التميز في التمريض</p>
+                    <div class="quote-line"></div>
+                </div>
+
+                <div class="motivation-icons">
+                    <div class="motiv-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>تعلم</p>
+                    </div>
+                    <div class="motiv-icon">
+                        <i class="fas fa-chart-line"></i>
+                        <p>تطور</p>
+                    </div>
+                    <div class="motiv-icon">
+                        <i class="fas fa-trophy"></i>
+                        <p>تميز</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="register" id="contact">
+  <div class="container">
+    <div class="register-wrapper">
+
+      <!-- العمود الأول: المعلومات -->
+      <div class="register-info">
+        <h2>التواصل للخدمات الخاصة</h2>
+        <p>للحصول على شرح خاص أو ملفات مخصصة، تواصل معنا مباشرة عبر واتساب أو تلجرام</p>
+        <ul class="register-benefits">
+          <li><i class="fas fa-check-circle"></i> ملفات خاصة مخصصة حسب الطلب</li>
+          <li><i class="fas fa-check-circle"></i> شروحات مفصلة مدفوعة</li>
+          <li><i class="fas fa-check-circle"></i> دعم شخصي عبر الواتساب أو تلجرام</li>
+        </ul>
+      </div>
+
+      <!-- العمود الثاني: أزرار التواصل -->
+      <div class="register-form">
+        <a href="https://chat.whatsapp.com/k6ojtosgezu6n3wjlitl92" target="_blank" class="contact-btn whatsapp">
+          <i class="fab fa-whatsapp"></i>
+          تواصل عبر واتساب
+        </a>
+        <a href="https://t.me/DNHedu" target="_blank" class="contact-btn telegram">
+          <i class="fab fa-telegram"></i>
+          تواصل عبر تلجرام
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <p class="section-subtitle">إجابات على أكثر الأسئلة شيوعاً</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كيف يمكنني تحميل الملفات؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>اضغط على أيقونة التحميل بجانب كل ملف (PDF أو PPT) في قسم المواضيع، وسيتم تحميل الملف مباشرة على جهازك.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل الفيديوهات تعمل على الهاتف؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، جميع الفيديوهات متجاوبة وتعمل بشكل ممتاز على جميع الأجهزة بما فيها الهواتف الذكية والأجهزة اللوحية.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل هناك شهادات بعد إكمال المواضيع؟</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>حالياً، المنصة تقدم موارد تعليمية فقط. نحن نعمل على إضافة ميزة الشهادات في التحديثات القادمة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Dweekat Nursing Hub</span>
+                    </div>
+                    <p class="footer-description">
+                        منصة تعليمية شاملة للممرضين والطلاب، نوفر أفضل المحتويات التعليمية والموارد المتخصصة في مجال التمريض.
+                    </p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/DweekatNH/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://chat.whatsapp.com/k6ojtosgezu6n3wjlitl92" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/DNHedu" target="_blank" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@DNHedu/videos" target="_blank" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    </a>
+                    <a href="mailto:DNHedu@outlook.com" target="_blank" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+               <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#topics">المواضيع</a></li>
+                        <li><a href="index.html#about">عن التمريض</a></li>
+                        <li><a href="index.html#contact">تواصل معنا</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>المواضيع</h3>
+                    <ul class="footer-links">
+                        <li><a href="#topics">BLS</a></li>
+                        <li><a href="#topics">ACLS</a></li>
+                        <li><a href="#topics">PALS</a></li>
+                        <li><a href="#topics">ICU Nursing</a></li>
+                        <li><a href="#topics">Emergency Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>اشترك في النشرة البريدية</h3>
+                    <p>احصل على آخر التحديثات والمحتوى الجديد</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dweekat Nursing Hub. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+/* ===========================
+   تعديلات صفحة BLS
+   =========================== */
+.bls-poster {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.bls-title {
+    font-size: 2rem;
+    color: #0d7377;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bls-description {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bls-download-btn {
+    background: linear-gradient(135deg, #0d7377 0%, #14a085 100%);
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.bls-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+</style>
+
+</body>
+</html>

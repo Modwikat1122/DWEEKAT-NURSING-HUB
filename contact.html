@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="اتصل بنا - Dweekat Nursing Hub">
+    <meta name="keywords" content="اتصل بنا, تمريض, Dweekat Nursing Hub">
+    <title>اتصل بنا - Dweekat Nursing Hub</title>
+
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="About.css">
+    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dhcpucpyf/image/upload/v1776950972/Education_University_Illustration_Template_Logo_Design_-_1_1_erqoy9.png">
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<header class="header">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Dweekat Nursing Hub</span>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="partners.html" class="nav-link">شركاؤنا</a></li>
+                    <li><a href="contact.html" class="active">تواصل معنا </a></li>
+                    <li><a href="contributors.html" class="nav-link">المساهمون التعليميون</a></li>
+                    
+                </ul>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section about-hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">اتصل بنا</h1>
+            <h2 class="hero-subtitle">Dweekat Nursing Hub</h2>
+            <p class="hero-description">نرحب بجميع استفساراتكم واقتراحاتكم</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="about-platform">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">تواصل معنا</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                يمكنك التواصل معنا عبر أي من القنوات التالية أو من خلال نموذج الرسائل المباشر.
+            </p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+
+                <!-- Contact Channels -->
+                <h3>📧 البريد الإلكتروني الرسمي</h3>
+                <p>
+                    للتواصل الرسمي: 
+                    <strong><a href="mailto:DNHedu@outlook.com">info@dnhedu.com</a></strong>
+                </p>
+
+                <h3>💬 واتساب</h3>
+                <p>
+                    للتواصل السريع: 
+                    <strong><a href="https://wa.me/0779327052" target="_blank">0779327052</a></strong>
+                </p>
+
+                <h3>📱 تيليجرام</h3>
+                <p>
+                    للمراسلة المباشرة: 
+                    <strong><a href="https://t.me/DNHedu" target="_blank">@DNHedu</a></strong>
+                </p>
+
+                <h3>📺 قناة يوتيوب</h3>
+                <p>
+                    للوصول للفيديوهات التعليمية: 
+                    <strong><a href="https://www.youtube.com/@DNHedu/videos" target="_blank">DNHedu</a></strong>
+                </p>
+
+                <hr>
+
+                <!-- Contact Form -->
+                <h3>✉️ نموذج التواصل المباشر</h3>
+                <p>
+                    أرسل لنا رسالتك مباشرة عبر النموذج أدناه، مع اختيار نوع الرسالة.  
+                    إذا اخترت <strong>مشكلة</strong>، سيتم إرسالها مباشرة إلى الإيميل: <strong>info@dnhedu.com</strong>
+                </p>
+
+                <form class="contact-form" id="contactForm" action="mailto:DNHedu@outlook.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" name="name" placeholder="اكتب اسمك" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">نوع الرسالة</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">اختر نوع الرسالة</option>
+                            <option value="suggestion">اقتراح أو تطوير محتوى</option>
+                            <option value="feedback">ملاحظة أو تعليق</option>
+                            <option value="technical">مشكلة</option>
+                            <option value="collaboration">تعاون أكاديمي</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">الرسالة</label>
+                        <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        إرسال الرسالة
+                    </button>
+                </form>
+
+                <p style="margin-top:15px; font-size:14px; color:#666;">
+                    ملاحظة: قد لا يتم الرد فورًا على جميع الرسائل، لكن سيتم مراجعتها بعناية.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dweekat Nursing Hub. جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="About.js"></script>
+</body>
+</html>
